@@ -50,10 +50,12 @@
         <h3 class="centered"><a href="{{ random_event_uri }}"> {{ random_event_name }} </a> </h3>
 
    {% elif total_cost > 500.00 %}
+        <h2><img src="https://s-media-cache-ak0.pinimg.com/736x/23/01/fb/2301fbcb340a777b42fefb2931d36504.jpg"></h2>
         <h2> It looks like you're keeping the lights on at EventbriteHQ. You've attended a total of {{ events }} events this year, spending a total of ${{ total_cost }} on tickets. Party On!</h2>
 
    {% else %}
-         <h2>2015 has been a good year for events in your life! You've purchased {{ events }} tickets on Eventbrite, spending a total of ${{ total_amount }}.</h2>
+        <h2><img src="https://s-media-cache-ak0.pinimg.com/736x/45/aa/a4/45aaa4b2f952e97187e7f32331d2ce1f.jpg"></h2>
+        <h2>2015 has been a good year for events in your life! You've purchased {{ events }} tickets on Eventbrite, spending a total of ${{ total_amount }}.</h2>
 
    {% endif %}
 </body>
