@@ -49,7 +49,7 @@ def welcome():
 
 
     random_index = random.randint(0, 49)
-    random_event_uri = upcoming_events['events'][random_index]['resource_uri']
+    random_event_url = upcoming_events['events'][random_index]['url']
     random_event_name = upcoming_events['events'][random_index]['name']['html']
 
 
@@ -64,7 +64,7 @@ def welcome():
     total_cost /= 100
 
 
-    return render_template('loggedin.html', int_cost=total_cost, total_cost="%.2f" % total_cost, events=events, random_event_uri=random_event_uri, random_event_name=random_event_name)
+    return render_template('loggedin.html', int_cost=total_cost, total_cost="%.2f" % total_cost, events=events, random_event_url=random_event_url, random_event_name=random_event_name)
 
 if __name__ == "__main__":
     app.run()
